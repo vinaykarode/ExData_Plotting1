@@ -15,7 +15,7 @@ hh_tab_s[['datetime']] <- paste(hh_tab_s$Date, hh_tab_s$Time)
 
 time<- strptime(hh_tab_s$datetime, "%Y-%m-%d %H:%M:%S")
 pow<- as.numeric(as.character(hh_tab_s$Global_active_power))
-
+g
 par(mfrow=c(2,2))
 plot(time,hh_tab_s$Global_active_power, xlab = '',type='l',ylab = 'Global Active Power')
 plot(time,hh_tab_s$'Voltage ' , xlab = '',type='l',ylab = 'Voltage')
